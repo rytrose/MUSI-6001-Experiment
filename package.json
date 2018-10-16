@@ -1,0 +1,14 @@
+{
+  "name": "interface",
+  "version": "1.0.0",
+  "description": "Interface for experiment in MUSI 6001 - Perception and Cognition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

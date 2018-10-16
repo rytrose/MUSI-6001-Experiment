@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MUSI 6001 - Final Project Experiment</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="center">
+    <h1>MUSI 6001 - Music Perception and Cognition</h1>
+    <h3>Ryan Rose, Carter Culwell, and Pranav Swaroop B N</h3>
+</div>
+
+<!--wavesurfer.js dependencies-->
+<script src="https://unpkg.com/wavesurfer.js"></script>
+<script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.regions.min.js"></script>
+
+<!--timer dependency-->
+<script src="js/easytimer.min.js"></script>
+
+<!--jQuery-->
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+<div id="timer">
+    <div class="values"></div>
+</div>
+
+<div id="player">
+    <div id="loading"><img src="images/loading.gif" style="height: 1em"> Loading audio...</div>
+    <div id="waveform">
+    </div>
+    <div id="controls" class="center" style="display: none">
+        <button onclick="play()">Play</button>
+        <button onclick="pause()">Pause</button>
+    </div>
+</div>
+
+<div id="regions">
+
+</div>
+
+<script src="js/experiment.js"></script>
+
+</body>
+</html>
