@@ -27,13 +27,9 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
-<div id="timer">
-    <div class="values"></div>
-</div>
-
-<div class="center">
+<div class="center" style="margin-bottom: 1rem">
     <p id="directions" style="margin: 0 10% 1% 10%">
-        Thank you for participating in this experiment! You will be presented with three audio tracks, sequentially. You
+        Thank you for participating in this experiment. You will be presented with three audio tracks, sequentially. You
         are asked to identify as many musical patterns as you can, specifying a pattern by creating a region in the
         below interface. To create a region, click and drag over the waveform below. Drag the colored handles to move
         the start and end positions of each region. Click and drag the gray part of the region to move it without
@@ -41,21 +37,33 @@
         needed. You will have up to five minutes to identify patterns for each track. Practice using the interface below
         before starting the experiment by pressing the "Begin" button below.
     </p>
-    <button onclick="start()">Begin</button>
+    <button id="begin" onclick="begin()">Begin</button>
+    <div id="timer" style="display: none"></div>
+    <button id="finish" onclick="finish()" style="display: none">Finish</button>
 </div>
 
 <div id="player">
     <div id="loading" class="center"><img src="images/loading.gif" style="height: 1em; margin-top: 4%"> Loading audio...</div>
     <div id="waveform">
     </div>
-    <div id="controls" class="center" style="display: none">
+    <div id="controls" class="center" style="display: none; margin: 1rem 0 1rem 0">
         <button onclick="play()">Play</button>
         <button onclick="pause()">Pause</button>
     </div>
 </div>
 
-<div id="regions">
+<div id="complete" class="center" style="display: none">
+    <form id="completeForm">
+        <label for="name">Name:</label>
+        <input id="name" type="text">
+        <input type="submit" value="Complete">
+    </form>
+</div>
 
+<div id="regions"></div>
+
+<div class="center">
+    <button id="submit" onclick="submit()" style="display: none">Submit</button>
 </div>
 
 <script src="js/experiment.js"></script>
