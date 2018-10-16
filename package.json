@@ -4,7 +4,7 @@
   "description": "Interface for experiment in MUSI 6001 - Perception and Cognition",
   "main": "index.js",
   "scripts": {
-    "start": "PORT=8080 node index.js"
+    "start": "PORT=80 node index.js"
   },
   "author": "",
   "license": "ISC",
