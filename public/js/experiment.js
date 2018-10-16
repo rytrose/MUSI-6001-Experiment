@@ -34,7 +34,7 @@ $(() => {
                     <button id="${region.id}_play" onclick="playRegion(this.id.substr(0, this.id.length - 5))">Play from Beginning</button>
                     <button onclick="pause()">Pause</button>
                     <button onclick="play()">Resume</button>
-                    <button id="${region.id}_delete" onclick="removeRegion(this.id.substr(0, this.id.length - 7))">Delete</button>
+                    <button id="${region.id}_delete" onclick="removeRegion(this.id.substr(0, this.id.length - 7))">Delete Region</button>
                 </p>
             </div>`
         );
