@@ -84,3 +84,17 @@ let removeRegion = (id) => {
 let playRegion = (id) => {
     wavesurfer.regions.list[id].play();
 };
+
+let save = async (name, result) => {
+    const rawResponse = await fetch('https://musi-6001-experiment.herokuapp.com/save', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({name: name, result: result})
+    });
+    const content = await rawResponse.json();
+
+    console.log(content);
+};
