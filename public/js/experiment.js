@@ -32,7 +32,7 @@ $(() => {
             alert("Please enter your name");
             return;
         }
-        else save(name, JSON.stringify(results));
+        else save($("#name").val(), JSON.stringify(results));
 
         $("#complete").hide();
         $("#directions").html("Thank you! You may now close this page.");
