@@ -175,7 +175,7 @@ let next = () => {
     if (track > 2) {
         $("#complete").show();
         $("#waveform").hide();
-        $("#directions").html("Thank you for participating in this experiment. Please enter your name and press " +
+        $("#directions").html("Thank you for participating in this experiment. Please enter your GT ID# (or name if not a student) and press " +
             "Complete to submit.");
     } else {
         loadTrack(track);
