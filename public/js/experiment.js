@@ -178,6 +178,8 @@ let next = () => {
         $("#directions").html("Thank you for participating in this experiment. Please enter your GT ID# (or name if not a student) and press " +
             "Complete to submit.");
     } else {
+    	$("#directions").html("Please identify as many musical patterns as you can. " +
+        "If you feel you have finished before time elapses, press the finish button below.");
         loadTrack(track);
     }
 };
