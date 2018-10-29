@@ -1,6 +1,6 @@
 let wavesurfer;
 let track = -1;
-let tracks = ["audio/Forest-Noise.wav", "audio/Harsh-Noise.wav", "audio/Street-Noise.wav"];
+let tracks = ["audio/Forest-Noise.mp3", "audio/Harsh-Noise.mp3", "audio/Street-Noise.mp3"];
 let results = {};
 let timer = new Timer();
 
