@@ -1,6 +1,6 @@
 let wavesurfer;
 let track = -1;
-let tracks = ["audio/nggyu.mp3", "audio/intro.mp3", "audio/nggyu.mp3"];
+let tracks = ["audio/Forest-Noise.wav", "audio/Harsh-Noise.wav", "audio/Street-Noise.wav"];
 let results = {};
 let timer = new Timer();
 
@@ -23,7 +23,7 @@ $(() => {
     wavesurfer.on('ready', onReady);
     wavesurfer.on('region-created', onRegionCreated);
     wavesurfer.on("region-updated", onRegionUpdated);
-    wavesurfer.load('audio/intro.mp3');
+    wavesurfer.load('audio/test.mp3');
 
     $("#completeForm").on('submit', event => {
         event.preventDefault();
